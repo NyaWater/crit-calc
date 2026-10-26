@@ -6,6 +6,13 @@ body {
     padding: 20px;
 }
 
+h1 {
+    text-align: center;
+    color: #030303;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
 label {
     display: block;
     margin-top: 15px;
