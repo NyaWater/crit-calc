@@ -8,6 +8,7 @@ btn.addEventListener('click', function() {
 
     // Calculate Expected Damage
     let critDmg = 0;
+    let realRate = Math.max(0, Math.min(100, rate));
     if (mode === "add") {
         critDmg = dmg * (1 + crit/100);
     } else if (mode === "multiply") {
@@ -15,7 +16,7 @@ btn.addEventListener('click', function() {
     } else {
         critDmg = 0;
     }
-    let finalResult = dmg * (1 - rate/100) + critDmg * rate/100;
+    let finalResult = dmg * (1 - realRate/100) + critDmg * realRate/100;
 
     document.getElementById('result').innerText = "Expected Damage: " + finalResult;
 });
