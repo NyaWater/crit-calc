@@ -17,3 +17,11 @@ Open `index.html` in your browser to use this tool.
 ## License
 
 MIT
+
+## AI Assistance
+
+The core calculation logic and algorithm were designed and implemented by me.
+
+AI was used during the frontend development to assist with page structure, styling, and some JavaScript glue code.
+
+All code has been reviewed, modified, and written by me.
