@@ -3,13 +3,13 @@ const btn = document.getElementById('calc-btn');
 btn.addEventListener('click', function() {
     const baseDmg = Number(document.getElementById('baseDmg').value);
     const critRate = Number(document.getElementById('critRate').value);
-    const critRes = Number(document.getElementById('critRes').value);
+    const enemyCritRes = Number(document.getElementById('enemyCritRes').value);
     const critDmgBonus = Number(document.getElementById('critDmgBonus').value);
     const mode = document.getElementById('mode').value;
 
     // Calculate Expected Damage
     let critDmg = 0;
-    let realRate = Math.max(0, Math.min(100, critRate - critRes));
+    let realRate = Math.max(0, Math.min(100, critRate - enemyCritRes));
     if (mode === "add") {
         critDmg = baseDmg * (1 + critDmgBonus/100);
     } else if (mode === "multiply") {
